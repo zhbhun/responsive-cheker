@@ -6,6 +6,8 @@ A simple tool to check responsive web design of different devices on one Page.
 2. Update the `ResponsiveChecker` instantiation code at the index.html, use your project web page urls;
 3. Open the index.html via a browser, recommend Chrome;
 
+For Example: https://zhbhun.github.io/responsive-cheker/
+
 # Advanced
 Responsive Checker has predetermined following deives
 
