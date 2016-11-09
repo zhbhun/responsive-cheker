@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+iframe {
+  border: none;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+#toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+  height: 30px;
+  background: #eee;
+}
+
+#toolbar .page-selector {
+  height: 24px;
+  margin-top: 3px;
+  margin-left: 6px;
+}
+
+#checker {
+  padding-top: 30px;
+  height: 100%;
+}
+
+.device {
+  float: left;
+  height: 100%;
+}
+
+.device h1 {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.device iframe {
+  box-sizing: content-box;
+  transform-origin: top left;
+}

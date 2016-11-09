@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Checker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./src/responsive-checker.css">
+    <script src="./src/responsive-checker.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var rc = new ResponsiveChecker({
+          urls: [
+            './demo/index.html',
+            './demo/generic.html',
+            './demo/elements.html',
+          ],
+          defaultIndex: 0,
+          devices: [
+            // predetermined devices
+            'iPhone 6',
+            'Android Mobile',
+            'iPad',
+            'Android Tablet',
+            'Surface',
+            // you can also define your define, like this
+            {
+              name: 'MacBook Air',
+              width: 1440,
+              height: 900,
+            }
+          ],
+        });
+        rc.run();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="toolbar"></div>
+    <div id="checker"></div>
+  </body>
+</html>
